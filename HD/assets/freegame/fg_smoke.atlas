@@ -1,0 +1,13 @@
+
+fg_smoke.png
+size: 484,138
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+smoke
+  rotate: false
+  xy: 2, 2
+  size: 480, 134
+  orig: 480, 134
+  offset: 0, 0
+  index: -1

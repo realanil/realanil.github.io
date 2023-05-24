@@ -1,0 +1,27 @@
+
+win_celebration.png
+size: 390,264
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+flair
+  rotate: true
+  xy: 2, 4
+  size: 258, 241
+  orig: 274, 255
+  offset: 9, 7
+  index: -1
+flair_bg
+  rotate: false
+  xy: 245, 2
+  size: 126, 126
+  orig: 131, 132
+  offset: 3, 3
+  index: -1
+glow
+  rotate: false
+  xy: 245, 130
+  size: 143, 132
+  orig: 158, 144
+  offset: 8, 6
+  index: -1

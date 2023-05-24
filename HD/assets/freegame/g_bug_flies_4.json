@@ -1,0 +1,32 @@
+{"frames": {
+
+"fg_bug_flies_00030.png":
+{
+	"frame": {"x":1,"y":1,"w":743,"h":498},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":30,"y":42,"w":743,"h":498},
+	"sourceSize": {"w":960,"h":540}
+},
+"fg_bug_flies_00031.png":
+{
+	"frame": {"x":1,"y":501,"w":739,"h":493},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":31,"y":38,"w":739,"h":493},
+	"sourceSize": {"w":960,"h":540}
+}},
+"animations": {
+	"fg_bug_flies": ["fg_bug_flies_00030.png","fg_bug_flies_00031.png"]
+},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "g_bug_flies_4.png",
+	"format": "RGBA8888",
+	"size": {"w":745,"h":995},
+	"scale": "0.5",
+	"related_multi_packs": [ "g_bug_flies_1.json", "g_bug_flies_2.json", "g_bug_flies_3.json" ],
+	"smartupdate": "$TexturePacker:SmartUpdate:88ebd33cb34bdb5cdc981e9a370cd817:c457a11dfdf9fee97c2fe1d078d5b7fb:1a0e8b540e3d3a8f1b3692cc25106d16$"
+}
+}

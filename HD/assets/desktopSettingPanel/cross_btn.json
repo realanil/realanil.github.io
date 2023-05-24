@@ -1,0 +1,44 @@
+{"frames": {
+
+"cross_btn_disable.png":
+{
+	"frame": {"x":1,"y":1,"w":52,"h":52},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":1,"w":52,"h":52},
+	"sourceSize": {"w":54,"h":54}
+},
+"cross_btn_down.png":
+{
+	"frame": {"x":55,"y":1,"w":52,"h":52},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":1,"w":52,"h":52},
+	"sourceSize": {"w":54,"h":54}
+},
+"cross_btn_over.png":
+{
+	"frame": {"x":109,"y":1,"w":52,"h":52},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":1,"w":52,"h":52},
+	"sourceSize": {"w":54,"h":54}
+},
+"cross_btn_up.png":
+{
+	"frame": {"x":163,"y":1,"w":52,"h":52},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":1,"w":52,"h":52},
+	"sourceSize": {"w":54,"h":54}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "cross_btn.png",
+	"format": "RGBA8888",
+	"size": {"w":216,"h":54},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:f59dd7e4920c4eb3465d06f429642552:b90d2fe43c139a8aba8f70fc5f5d27ce:00267d6a0df40d05b0e5bf2f83a39e8f$"
+}
+}

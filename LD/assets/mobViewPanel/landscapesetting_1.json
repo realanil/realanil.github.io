@@ -1,0 +1,236 @@
+{"frames": {
+
+"cir_ld.png":
+{
+	"frame": {"x":1929,"y":102,"w":35,"h":36},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":35,"h":36},
+	"sourceSize": {"w":35,"h":36}
+},
+"cir_ld_dim.png":
+{
+	"frame": {"x":457,"y":325,"w":35,"h":36},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":35,"h":36},
+	"sourceSize": {"w":35,"h":36}
+},
+"landautoplay_box.png":
+{
+	"frame": {"x":1305,"y":159,"w":190,"h":100},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":190,"h":100},
+	"sourceSize": {"w":190,"h":100}
+},
+"landautoplay_box_up.png":
+{
+	"frame": {"x":1497,"y":159,"w":190,"h":100},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":190,"h":100},
+	"sourceSize": {"w":190,"h":100}
+},
+"landautoplay_disable.png":
+{
+	"frame": {"x":1458,"y":261,"w":98,"h":98},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":1,"w":98,"h":98},
+	"sourceSize": {"w":98,"h":100}
+},
+"landautoplay_disable_2.png":
+{
+	"frame": {"x":1558,"y":261,"w":98,"h":98},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":1,"w":98,"h":98},
+	"sourceSize": {"w":98,"h":100}
+},
+"landautoplay_up.png":
+{
+	"frame": {"x":1658,"y":261,"w":98,"h":98},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":1,"w":98,"h":98},
+	"sourceSize": {"w":98,"h":100}
+},
+"landbet_box.png":
+{
+	"frame": {"x":1689,"y":159,"w":151,"h":100},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":151,"h":100},
+	"sourceSize": {"w":151,"h":100}
+},
+"landbet_box_up.png":
+{
+	"frame": {"x":1305,"y":261,"w":151,"h":100},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":151,"h":100},
+	"sourceSize": {"w":151,"h":100}
+},
+"landborder_line.png":
+{
+	"frame": {"x":1923,"y":1,"w":4,"h":130},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":4,"h":130},
+	"sourceSize": {"w":4,"h":130}
+},
+"landbottom_icon_bar.png":
+{
+	"frame": {"x":1,"y":1,"w":1920,"h":150},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":1920,"h":150},
+	"sourceSize": {"w":1920,"h":150}
+},
+"landclose_disable.png":
+{
+	"frame": {"x":928,"y":311,"w":87,"h":87},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":6,"y":7,"w":87,"h":87},
+	"sourceSize": {"w":98,"h":100}
+},
+"landclose_on.png":
+{
+	"frame": {"x":1017,"y":311,"w":87,"h":87},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":6,"y":7,"w":87,"h":87},
+	"sourceSize": {"w":98,"h":100}
+},
+"landcoin_disable.png":
+{
+	"frame": {"x":1758,"y":261,"w":81,"h":96},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":2,"w":81,"h":96},
+	"sourceSize": {"w":98,"h":100}
+},
+"landcoin_up.png":
+{
+	"frame": {"x":653,"y":311,"w":81,"h":96},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":2,"w":81,"h":96},
+	"sourceSize": {"w":98,"h":100}
+},
+"landhorizontal_line.png":
+{
+	"frame": {"x":1,"y":153,"w":1920,"h":4},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":1920,"h":4},
+	"sourceSize": {"w":1920,"h":4}
+},
+"landinformation_disable.png":
+{
+	"frame": {"x":1929,"y":1,"w":33,"h":99},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":34,"y":1,"w":33,"h":99},
+	"sourceSize": {"w":98,"h":100}
+},
+"landinformation_up.png":
+{
+	"frame": {"x":1912,"y":159,"w":33,"h":99},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":34,"y":1,"w":33,"h":99},
+	"sourceSize": {"w":98,"h":100}
+},
+"landpaytable_disable.png":
+{
+	"frame": {"x":1841,"y":261,"w":68,"h":99},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":15,"y":1,"w":68,"h":99},
+	"sourceSize": {"w":98,"h":100}
+},
+"landpaytable_up.png":
+{
+	"frame": {"x":1842,"y":159,"w":68,"h":100},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":15,"y":0,"w":68,"h":100},
+	"sourceSize": {"w":98,"h":100}
+},
+"landradio_btn_disable.png":
+{
+	"frame": {"x":1,"y":325,"w":150,"h":50},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":150,"h":50},
+	"sourceSize": {"w":150,"h":50}
+},
+"landradio_btn_off.png":
+{
+	"frame": {"x":153,"y":325,"w":150,"h":50},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":150,"h":50},
+	"sourceSize": {"w":150,"h":50}
+},
+"landradio_btn_on.png":
+{
+	"frame": {"x":305,"y":325,"w":150,"h":50},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":150,"h":50},
+	"sourceSize": {"w":150,"h":50}
+},
+"landsetting_disable.png":
+{
+	"frame": {"x":736,"y":311,"w":94,"h":94},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":2,"y":3,"w":94,"h":94},
+	"sourceSize": {"w":98,"h":100}
+},
+"landsetting_up.png":
+{
+	"frame": {"x":832,"y":311,"w":94,"h":94},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":2,"y":3,"w":94,"h":94},
+	"sourceSize": {"w":98,"h":100}
+},
+"landslider_line.png":
+{
+	"frame": {"x":1,"y":311,"w":650,"h":12},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":19,"w":650,"h":12},
+	"sourceSize": {"w":650,"h":50}
+},
+"landstart_disable.png":
+{
+	"frame": {"x":1,"y":159,"w":650,"h":150},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":650,"h":150},
+	"sourceSize": {"w":650,"h":150}
+},
+"landstart_up.png":
+{
+	"frame": {"x":653,"y":159,"w":650,"h":150},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":650,"h":150},
+	"sourceSize": {"w":650,"h":150}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.1",
+	"image": "landscapesetting_1.png",
+	"format": "RGBA8888",
+	"size": {"w":1965,"h":408},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:2de55c08e6ac3e7fec5aa50f9c790496:71562f25227a1d43d063e1db2e97100d:a266b723e58052fb75565ab7ef2903bf$"
+}
+}

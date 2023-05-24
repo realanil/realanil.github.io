@@ -1,0 +1,36 @@
+{"frames": {
+
+"slam.png":
+{
+	"frame": {"x":1,"y":1,"w":72,"h":72},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":72,"h":72},
+	"sourceSize": {"w":72,"h":72}
+},
+"slam_disable.png":
+{
+	"frame": {"x":75,"y":1,"w":72,"h":72},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":72,"h":72},
+	"sourceSize": {"w":72,"h":72}
+},
+"slam_down.png":
+{
+	"frame": {"x":149,"y":1,"w":72,"h":72},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":72,"h":72},
+	"sourceSize": {"w":72,"h":72}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "slam.png",
+	"format": "RGBA8888",
+	"size": {"w":222,"h":74},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:539c6d9d3efcdc23f1742911c8d00cee:0a6e857eb4061c1b8fe739cbf1c2d5a3:14db06a7e5dfd8c6230aa78fce315cc4$"
+}
+}

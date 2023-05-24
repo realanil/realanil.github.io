@@ -1,0 +1,25 @@
+<font>
+	<info face="big_num_digit-export" size="80" />
+	<common lineHeight="80" scaleW="1391" scaleH="1488" pages="1" />
+	<pages>
+		<page id="0" file="big_num_digit-export.png" />
+	</pages>
+	<chars count="14">
+		<char id="48" x="585" y="501" width="280" height="500" xoffset="0" yoffset="-420" xadvance="281" /><!-- 0 -->
+		<char id="49" x="1134" y="501" width="209" height="491" xoffset="0" yoffset="-416" xadvance="210" /><!-- 1 -->
+		<char id="50" x="866" y="501" width="267" height="495" xoffset="0" yoffset="-420" xadvance="268" /><!-- 2 -->
+		<char id="51" x="1131" y="0" width="259" height="500" xoffset="0" yoffset="-420" xadvance="260" /><!-- 3 -->
+		<char id="52" x="0" y="507" width="298" height="491" xoffset="0" yoffset="-416" xadvance="299" /><!-- 4 -->
+		<char id="53" x="869" y="0" width="261" height="496" xoffset="0" yoffset="-416" xadvance="262" /><!-- 5 -->
+		<char id="54" x="299" y="507" width="285" height="500" xoffset="0" yoffset="-420" xadvance="286" /><!-- 6 -->
+		<char id="55" x="866" y="997" width="267" height="490" xoffset="0" yoffset="-415" xadvance="268" /><!-- 7 -->
+		<char id="56" x="302" y="0" width="285" height="500" xoffset="0" yoffset="-420" xadvance="286" /><!-- 8 -->
+		<char id="57" x="588" y="0" width="280" height="500" xoffset="0" yoffset="-420" xadvance="281" /><!-- 9 -->
+		<char id="46" x="0" y="1008" width="140" height="193" xoffset="0" yoffset="-113" xadvance="141" /><!-- . -->
+		<char id="120" x="0" y="0" width="301" height="506" xoffset="0" yoffset="-431" xadvance="302" /><!-- x -->
+		<char id="32" x="0" y="0" width="0" height="0" xoffset="0" yoffset="0" xadvance="20" /><!--   -->
+		<char id="9" x="0" y="0" width="0" height="0" xoffset="0" yoffset="0" xadvance="160" /><!-- 	 -->
+	</chars>
+	<kernings count="0">
+	</kernings>
+</font>

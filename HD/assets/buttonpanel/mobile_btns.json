@@ -1,0 +1,100 @@
+{"frames": {
+
+"mobileautoplay_disable.png":
+{
+	"frame": {"x":1,"y":303,"w":268,"h":157},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":268,"h":157},
+	"sourceSize": {"w":268,"h":157}
+},
+"mobileautoplay_down.png":
+{
+	"frame": {"x":271,"y":303,"w":268,"h":157},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":268,"h":157},
+	"sourceSize": {"w":268,"h":157}
+},
+"mobileautoplay_meter.png":
+{
+	"frame": {"x":811,"y":303,"w":83,"h":83},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":83,"h":83},
+	"sourceSize": {"w":83,"h":83}
+},
+"mobileautoplay_up.png":
+{
+	"frame": {"x":541,"y":303,"w":268,"h":157},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":268,"h":157},
+	"sourceSize": {"w":268,"h":157}
+},
+"mobilehamburger_disable.png":
+{
+	"frame": {"x":907,"y":193,"w":88,"h":81},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":7,"y":6,"w":88,"h":81},
+	"sourceSize": {"w":102,"h":94}
+},
+"mobilehamburger_up.png":
+{
+	"frame": {"x":907,"y":276,"w":88,"h":81},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":7,"y":6,"w":88,"h":81},
+	"sourceSize": {"w":102,"h":94}
+},
+"mobilehome_disable.png":
+{
+	"frame": {"x":907,"y":1,"w":102,"h":94},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":102,"h":94},
+	"sourceSize": {"w":102,"h":94}
+},
+"mobilehome_up.png":
+{
+	"frame": {"x":907,"y":97,"w":102,"h":94},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":102,"h":94},
+	"sourceSize": {"w":102,"h":94}
+},
+"mobilespin_disable.png":
+{
+	"frame": {"x":1,"y":1,"w":300,"h":300},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":300,"h":300},
+	"sourceSize": {"w":300,"h":300}
+},
+"mobilespin_down.png":
+{
+	"frame": {"x":303,"y":1,"w":300,"h":300},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":300,"h":300},
+	"sourceSize": {"w":300,"h":300}
+},
+"mobilespin_up.png":
+{
+	"frame": {"x":605,"y":1,"w":300,"h":300},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":300,"h":300},
+	"sourceSize": {"w":300,"h":300}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "mobile_btns.png",
+	"format": "RGBA8888",
+	"size": {"w":1010,"h":461},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:1bd523cad945fef0b370ce4294adf5b4:fc84c3f5d5f114915447aa6cc6f9bc96:475795ac2630dfa5530a430c52d00775$"
+}
+}
