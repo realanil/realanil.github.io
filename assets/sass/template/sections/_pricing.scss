@@ -1,0 +1,352 @@
+/* Pricing 1 ---------------------------------- */
+.available-list {
+    padding-left: 30px;
+
+    @include xs {
+        padding: 0;
+    }
+
+    ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    li {
+        position: relative;
+        font-family: $body-font;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        padding-left: 30px;
+        margin-bottom: 4px;
+        text-transform: capitalize;
+        color: #4D5765;
+
+        &:after {
+            content: "\f00c";
+            font-family: var(--icon-font);
+            font-weight: 500;
+            color: var(--theme-color);
+            font-size: 1.1em;
+            position: absolute;
+            top: 1px;
+            left: 0;
+        }
+
+        &.unavailable {
+            &:after {
+                content: "\f00c";
+                right: 4px;
+                color: #E4E4E4;
+                font-weight: 400;
+            }
+        }
+
+        img {
+            max-width: 18px;
+            margin-right: 10px;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &.unavailable {
+            font-weight: 400;
+            color: $body-color;
+
+            img {
+                opacity: 0.2;
+            }
+        }
+    }
+
+}
+
+.price-area {
+    .row {
+        --bs-gutter-x: 30px;
+        --bs-gutter-y: 30px;
+    }
+}
+
+/* Pricing  Start -----------------------------*/
+.price-image {
+    position: relative;
+    background-size: auto;
+    z-index: 2;
+
+    .img1 {
+        position: relative;
+        text-align: right;
+        z-index: 2;
+
+    }
+
+    .img2 {
+        width: 260px;
+        height: 210px;
+        position: absolute;
+        right: 36px;
+        bottom: 0;
+        border-radius: 38px 50px 50px 50px;
+        // border: 15px solid $white-color; 
+
+        &:before,
+        &:after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            border-radius: inherit;
+            z-index: -1;
+        }
+
+        &:before {
+            background-color: $theme-color;
+        }
+
+        &:after {
+            background-color: $white-color;
+            filter: blur(102px);
+            bottom: 0;
+            left: 0;
+            width: 178px;
+            height: 178px;
+            border-radius: 50%;
+        }
+
+        img {
+            border-radius: 38px 50px 50px 50px;
+        }
+    }
+
+    .img3 {
+        position: absolute;
+        top: 0;
+        left: 94px;
+        z-index: 1;
+    }
+
+}
+
+.price-content {
+    padding-left: 40px;
+
+    @include xl {
+        padding-left: 0px;
+    }
+}
+
+.price-box {
+    position: relative;
+    background-color: $smoke-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    @include md {
+        justify-content: flex-start;
+    }
+
+    @include xs {
+        display: block;
+    }
+
+    &.style2 {
+        display: block;
+    }
+
+    .offer-tag {
+        position: absolute;
+        top: 30px;
+        left: -40px;
+        background-color: $title-color;
+        font-family: $title-font;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 30px;
+        color: $white-color;
+        padding: 2px 40px;
+        transform: rotate(-45deg);
+        display: block;
+
+    }
+
+
+
+    &_wrapp {
+        padding: 60px 40px 40px 0px;
+
+        @include lg {
+            padding: 60px 25px 25px 25px;
+        }
+
+        @include md {
+            padding: 60px 25px 25px 60px;
+        }
+
+        @include xs {
+            padding: 60px 25px 0px 60px;
+        }
+    }
+
+    &_content {
+        padding: 40px;
+        border-left: 1px solid #E4E4E4;
+
+        @include lg {
+            padding: 25px 20px 25px 25px;
+        }
+
+        .available-list {
+            padding: 0;
+
+            li {
+                margin-top: -0.3rem;
+                margin-bottom: 6px;
+            }
+        }
+    }
+
+    &_price {
+        font-size: 44px;
+        font-weight: 700;
+        line-height: 54px;
+        margin-bottom: 5px;
+
+        @include lg {
+            font-size: 33px;
+            line-height: 44px;
+        }
+    }
+
+    &_text {
+        font-family: $title-font;
+        color: $theme-color;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 24px;
+        margin-bottom: -0.3rem;
+    }
+
+    .th-btn {
+        margin-top: 20px;
+        padding: 16px 18px;
+    }
+
+    &.active {
+        .offer-tag {
+            background-color: $theme-color;
+        }
+
+        .th-btn {
+            background-color: $title-color;
+
+            &:before,
+            &:after {
+                background-color: $theme-color;
+            }
+        }
+    }
+}
+
+/* Price box end --------------------------*/
+/* Price card start -------------------------*/
+.price-card {
+    position: relative;
+    background-color: $smoke-color;
+    overflow: hidden;
+
+    .offer-tag {
+        position: absolute;
+        top: 22px;
+        left: -35px;
+        background-color: $title-color;
+        font-family: $title-font;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 30px;
+        width: 149px;
+        height: 30px;
+        display: block;
+        text-align: center;
+        color: $white-color;
+        transform: rotate(-45deg);
+        display: block;
+
+    }
+
+    &_wrapp {
+        margin: 65px 40px 0px 40px;
+        border-bottom: 1px solid #E4E4E4;
+        padding-bottom: 40px;
+    }
+
+    &_content {
+        padding: 40px;
+        .available-list ul {
+            margin-top: -0.3rem;
+        }
+
+        @include lg {
+            padding: 25px 20px 25px 25px;
+        }
+
+        .available-list {
+            padding: 0;
+
+            li {
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    &_price {
+        font-size: 44px;
+        font-weight: 700;
+        line-height: 54px;
+        margin-bottom: 5px;
+
+        @include lg {
+            font-size: 33px;
+            line-height: 44px;
+        }
+    }
+
+    &_text {
+        font-family: $title-font;
+        color: $body-color;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 24px;
+        margin-bottom: -0.3rem;
+    }
+
+    .th-btn {
+        margin-top: 20px;
+        background-color: $title-color;
+
+        &:before,
+        &:after {
+            background-color: $theme-color;
+        } 
+    }
+
+    &.active {
+        .offer-tag {
+            background-color: $theme-color;
+        }
+        .th-btn {
+            background-color: $theme-color;
+    
+            &:before,
+            &:after {
+                background-color: $title-color; 
+            } 
+        }
+    }
+}
+
+/* Price card end -------------------------*/

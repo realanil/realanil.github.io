@@ -1,0 +1,484 @@
+/* Service box start ---------------------------------- */
+.service-box {
+    border-radius: 0px;
+    background-color: #0E121D;
+    box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.03);
+    padding: 40px;
+    margin: 0;
+    background-position: bottom center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    transition: 0.4s ease-in-out;
+    position: relative;
+    z-index: 2;
+
+    &.style2 {
+        box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.06);
+    }
+
+    &:before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        background-color: $white-color;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+        transition: 0.4s ease-in-out;
+    }
+
+    .service-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 2px solid #E4E4E4;
+        margin-bottom: 40px;
+        padding-bottom: 40px;
+        transition: 0.4s ease-in-out;
+    }
+
+    .box-title {
+        margin-bottom: 13px;
+
+    }
+
+    &_number {
+        font-family: $title-font;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 30px;
+        color: #C4C8D3;
+        margin-left: auto;
+    }
+
+    &_text {
+        margin-bottom: 15px;
+        transition: 0.4s;
+        line-height: 26px;
+    }
+
+    .line-btn {
+        color: $title-color;
+
+        &:before {
+            background-color: $title-color;
+        }
+    }
+
+    .service-box-shape {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        opacity: 0.12;
+    }
+
+    &:hover {
+        &:before {
+            width: 0;
+        }
+
+        .box-title {
+            color: $white-color;
+        }
+
+        .service-content {
+            border-color: #4D5765;
+        }
+
+        .service-box {
+            &_number {
+                color: #4D5765;
+            }
+        }
+
+        .line-btn {
+            color: $theme-color;
+
+            &:before {
+                background-color: $theme-color;
+            }
+        }
+    }
+}
+
+
+
+/* Service box end -----------------------------------*/
+
+/* Service item start -------------------------------------*/
+.service-item {
+    position: relative;
+    background: #F8F8F8;
+    border: 1px solid #E4E4E4;
+    padding: 20px 20px 30px 20px;
+    text-align: center;
+
+    &_img {
+        margin-bottom: 28px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &_text {
+        margin-bottom: 20px;
+    }
+
+    .icon-btn {
+        width: 56px;
+        height: 56px;
+        line-height: 56px;
+        border: 1px solid #E4E4E4;
+
+        i {
+            color: $theme-color;
+            transition: all 0.7s ease-in-out;
+        }
+
+        &:hover {
+            border-color: $theme-color;
+
+            i {
+                color: $white-color;
+            }
+        }
+
+    }
+
+}
+
+/* Service item end -------------------------------------*/
+/* Service Details ---------------------------------- */
+.page-title {
+    margin-bottom: 20px;
+}
+
+.page-img {
+    margin-bottom: 40px;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+    }
+}
+
+.page-single {
+    margin-bottom: 30px;
+    margin-right: 15px;
+}
+
+.service-process {
+    background-color: $white-color;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 9px 37px 0px rgba(0, 0, 0, 0.07);
+    border-radius: 0;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+
+    &-wrap {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+        margin-bottom: 30px;
+
+        @include lg {
+            grid-template-columns: repeat(2, 1fr);
+            margin-bottom: 0;
+        }
+
+        @include sm {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+
+    }
+
+    &_img {
+        margin-bottom: 8px;
+    }
+
+    &_title {
+        font-family: $body-font;
+        font-size: 24px;
+        line-height: 34px;
+        font-weight: 600;
+        text-transform: capitalize;
+        margin-bottom: 14px;
+
+        @include xl {
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
+
+    &_text {
+        line-height: 26px;
+        margin-bottom: -0.3rem;
+    }
+}
+
+
+
+.service-area {
+    @include xxl {
+        .slider-arrow {
+            display: none !important;
+        }
+    }
+}
+
+.service-accordion {
+    border-top: 1px solid #888C97;
+
+    @include md {
+        border-top: 0;
+    }
+}
+
+.service-accordion-content {
+    border-left: 1px solid #888C97;
+    padding-left: 67px;
+    padding-top: 20px;
+    margin-left: 47px;
+
+    @include xl {
+        margin-left: 80px;
+    }
+
+    @include lg {
+        padding-left: 30px;
+        padding-top: 30px;
+        margin-left: 30px;
+
+    }
+
+    @include md {
+        margin-left: 0;
+        padding: 0;
+        border: none;
+    }
+
+    &:not(:last-child) {
+        margin-bottom: 24px;
+    }
+}
+
+.accordion-item {
+    transition: 0.4s ease-in-out;
+    background: transparent;
+    overflow: hidden;
+
+    &_info {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &_wrapp {
+        display: flex;
+        gap: 40px;
+
+        @include xs {
+            display: block;
+        }
+    }
+
+    &_number {
+        border: 1px solid $gray-color;
+        width: 69px;
+        height: 32px;
+        padding: 2px 24.5px;
+        border-radius: 30px;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 27px;
+        color: $gray-color;
+    }
+
+    &_content {
+        color: #fff;
+        padding: 0 30px 0px 110px;
+        max-height: 0;
+        overflow: hidden;
+        will-change: max-height;
+        transition: all 1s ease;
+        opacity: 0;
+
+        @include xs {
+            padding: 0 30px 0px 0px;
+        }
+    }
+
+    .box-title {
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 40px;
+        margin-top: -0.2rem;
+        margin-bottom: 0px;
+        display: block;
+
+        @include sm {
+            font-size: 24px;
+            line-height: 34px;
+        }
+
+        @include xs {
+            font-size: 24px;
+            line-height: 34px;
+            margin-top: 20px;
+        }
+    }
+
+    i {
+        font-size: 30px;
+        font-weight: 400;
+        color: $gray-color;
+        transform: rotate(-45deg);
+        transition: all 1s ease;
+
+        @include xs {
+            font-size: 24px;
+        }
+    }
+
+    .accordion-button {
+        font-size: 30px;
+        font-weight: 600;
+        font-family: $title-font;
+        border: 0;
+        color: $title-color;
+        background: transparent;
+        padding: 40px 0 35px 0;
+        gap: 10px;
+        margin-bottom: 0;
+        text-align: left;
+        display: block;
+        transition: 0.3s;
+        position: relative;
+        border-radius: 0 !important;
+
+        @include xs {
+            padding: 25px 0 20px 0;
+        }
+
+        &:after {
+            display: none;
+        }
+
+        &:focus {
+            outline: none;
+            box-shadow: none;
+        }
+
+        &:not(.collapsed) {
+            box-shadow: none;
+            border-bottom: none;
+            background-color: transparent;
+            padding: 40px 0 20px 0;
+
+            .accordion-item {
+                &_number {
+                    border-color: $theme-color;
+                    color: $theme-color;
+                }
+            }
+
+            i {
+                color: $theme-color;
+                transform: rotate(0deg);
+            }
+
+            &:after {
+                content: '\f068';
+                transform: rotate(0);
+            }
+        }
+
+        &.collapsed {
+            border-bottom: 1px solid $gray-color;
+        }
+    }
+
+    .accordion-collapse {
+        border: none;
+        .accordion-body {
+            border-color: $theme-color;
+        }
+
+    }
+
+    .accordion-body {
+        background-color: transparent;
+        border: none;
+        padding: 0px 30px 30px 110px;
+        border-bottom: 1px solid $gray-color;
+
+        @include xs {
+            padding: 0 20px 30px 0;
+        }
+    }
+
+    .faq-text {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        margin: -0.4rem 0 -0.5rem 0;
+    }
+
+    .faq-img {
+        height: 100%;
+
+        img {
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+
+}
+
+.th-accordion_images {
+    position: relative;
+    margin-top: 60px;
+
+    @include lg {
+        margin-top: 30px;
+    }
+
+    @include md {
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
+
+    img {
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.4s ease-in-out;
+
+        &.active {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+    img {
+        opacity: 0;
+        transition: all 1.3s ease;
+
+        &:not(:first-child) {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        &.active {
+            opacity: 1;
+        }
+    }
+}
+
+/* Service accordion end ---------------------------------- */

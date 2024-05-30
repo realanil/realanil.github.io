@@ -1,0 +1,333 @@
+/* Counter 1 ---------------------------------- */
+.counter-area {
+    @include lg {
+        padding: 60px 0;
+    }
+}
+
+.counter-area2 {
+    position: relative;
+    z-index: 2;
+}
+
+.counter-card {
+    &_icon {
+        width: 80px;
+        height: 80px;
+        line-height: 80px;
+        border-radius: 50%;
+        text-align: center;
+        background-color: $white-color;
+        border: 1px solid #EBEDF1;
+        filter: drop-shadow(2.5px 2.5px 15px rgba(232, 234, 238, 0.55));
+        transition: 0.4s ease-in-out;
+        margin-bottom: 35px;
+
+        @include sm {
+            display: block;
+            margin: auto auto 35px auto;
+        }
+
+        &:before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            transform: scale(0);
+            border-radius: 50%;
+            background-color: var(--theme-color);
+            transform-origin: center;
+            transform-style: preserve-3d;
+            transition: all 0.5s cubic-bezier(0.62, 0.21, 0.45, 1.52);
+            z-index: -1;
+        }
+
+        img {
+            transition: 0.4s ease-in-out;
+        }
+    }
+
+    &-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 40px;
+
+        &.style3 {
+            @include md {
+                display: block;
+            }
+        }
+
+        .divider {
+            background: #D4DAE7;
+            width: 1px;
+            height: 245px;
+
+            &:last-of-type {
+                display: none;
+            }
+
+            @include md {
+                display: none;
+            }
+
+        }
+
+        &.style2 {
+            justify-content: center;
+
+            &:last-child {
+                border-right: 0;
+            }
+
+            .divider {
+                background: #5770FF;
+            }
+        }
+    }
+
+    .box-number {
+        font-size: 54px;
+        font-weight: 700;
+        line-height: 64px;
+        color: $title-color;
+        margin-bottom: 0px;
+        margin-top: -0.5rem;
+    }
+
+    .box-text {
+        font-family: $title-font;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 28px;
+    }
+
+    .counter-title {
+        margin-bottom: 6px;
+        font-size: 20px;
+
+        @include md {
+            font-size: 18px;
+        }
+
+        @include sm {
+            font-size: 20px;
+        }
+    }
+
+    .counter-text {
+        @include md {
+            font-size: 16px;
+        }
+    }
+
+    .media-body {
+        flex: 1;
+        max-width: 312px;
+    }
+
+    @include lg {}
+
+    &:hover {
+        .counter-card {
+            &_icon {
+                &:before {
+                    transform: scaleX(1.0);
+                }
+
+                img {
+                    transform: rotateY(180deg);
+                    filter: brightness(0) invert(1);
+                }
+            }
+        }
+    }
+
+    &.style2 {
+        padding: 80px 0;
+        display: flex;
+        gap: 20px;
+
+        @include lg {
+            padding: 20px 0;
+        }
+
+        @include sm {
+            padding: 35px 0;
+            flex-direction: column;
+        }
+    }
+}
+
+@include md {
+    .counter-card {
+        .box-number {
+            font-size: 46px;
+        }
+
+        .box-text {
+            font-size: 18px;
+        }
+    }
+}
+
+@include sm {
+    .counter-sec1 {
+        padding-bottom: 60px;
+    }
+
+    .counter-card {
+        &-wrap {
+            flex-wrap: wrap;
+            position: relative;
+            display: block;
+
+            .divider {
+                display: none;
+            }
+        }
+
+        flex: 50%;
+        padding-left: 10px;
+        padding-right: 10px;
+
+        text-align: center;
+
+        &:nth-child(1),
+        &:nth-child(3) {
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+
+        .media-body {
+            max-width: 100%;
+        }
+    }
+}
+
+// -------------------------------
+.counter-box {
+    &:not(:last-child) {
+        border-bottom: 1px solid #E4E4E4;
+        padding-bottom: 40px;
+        margin-bottom: 40px;
+    }
+
+    .box-number {
+        font-size: 54px;
+        font-weight: 700;
+        line-height: 54px;
+        color: $title-color;
+        margin-top: -0.3rem;
+        margin-bottom: 3px;
+
+    }
+
+    .counter-number {
+        font-weight: 700;
+        color: $title-color;
+    }
+
+    .text {
+        font-weight: 400;
+        color: $theme-color;
+    }
+
+    .box-text {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 28px;
+        margin-bottom: -0.3rem;
+    }
+
+    &-wrap {
+        margin-left: 60px;
+        margin-top: 5px;
+
+        @include lg {
+            margin-left: 0;
+        }
+
+        @include md {
+            padding-top: 80px;
+        }
+    }
+}
+
+
+.counter-card {
+    &.style4 {
+        .counter-card_number {
+            color: $white-color;
+            font-weight: 700;
+            font-size: 84px;
+            line-height: 84px;
+            margin-top: -0.9rem;
+        }
+    }
+}
+
+//---------------------------------
+.counter-card {
+
+    &.style2 {
+        .counter-number {
+            color: inherit;
+        }
+
+        .text {
+            font-weight: 400;
+        }
+    }
+
+    &.style4 {
+        &:not(:last-child) {
+            border-right: 1px solid rgba(204, 204, 204, 0.2);
+            margin-right: 18px;
+            padding-right: 50px;
+
+            @include md {
+                border-right: 0;
+                margin-right: 0; 
+                padding-right: 0;  
+                margin-bottom: 40px;
+            }
+        }
+
+
+        .counter-card {
+            &_text {
+                color: $gray-color;
+                margin-bottom: -0.2rem;
+            }
+        }
+
+        .plus {
+            color: $theme-color;
+            font-weight: 400;
+        }
+    }
+}
+
+.counter-sec2 {
+    margin-top: -20px;
+    background-size: auto;
+    background-position: top center;
+    background-repeat: repeat-x;
+    position: relative;
+    z-index: 2;
+
+    &:before {
+        content: '';
+        position: absolute;
+        inset: 80px 0 0 0;
+        background-color: $smoke-color2;
+        z-index: -1;
+    }
+}
+
+.counter-sec {
+    position: relative;
+    z-index: 3;
+    margin-top: 33px;
+}

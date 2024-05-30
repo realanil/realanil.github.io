@@ -1,0 +1,226 @@
+/* Brand 1 ---------------------------------- */
+.brand-slider {
+    background-color: $theme-color;
+}
+
+.brand-area {
+    position: relative;
+    z-index: 3;
+}
+
+
+@media (min-width: 1300px) {
+    .brand-sec3 {
+        .th-container {
+            --main-container: 1516px;  
+        }
+    }
+}
+
+.brand-sec {
+    position: relative;
+    padding: 55px 200px 55px 60px;
+    z-index: 2;
+
+    @media(max-width: 1699px) {
+        padding: 55px 140px 55px 20px;
+    }
+
+    @include md {
+        padding: 55px 20px 55px 20px;
+    }
+
+    .brand-shape {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 347px;
+        height: 351px;
+        background-color: $theme-color;
+        clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+
+        @media(max-width: 1699px) {
+            width: 200px;
+        }
+
+        @include md {
+            display: none;
+        }
+    }
+}
+
+.brandSlider1 {
+    background-color: #252F3D;
+    padding: 40px 0px 10px 0;
+    clip-path: polygon(4% 0, 100% 0, 100% 100%, 0% 100%);
+    margin-right: -1px;
+
+    @include xl {
+        padding: 40px 0px 10px 10px;
+    }
+
+    @include lg {
+        clip-path: none;
+    }
+}
+
+.brand-title-area {
+    padding: 60px 0 60px 60px;
+
+    @media(max-width: 1399px) {
+        padding: 40px 0 40px 40px;
+    }
+
+    .title-area {
+        .sec-title {
+            font-weight: 600;
+            line-height: 46px;
+            margin-top: -0.5rem;
+            margin-bottom: 12px;
+
+            @include xl {
+                font-size: 28px;
+                line-height: 38px;
+            }
+        }
+
+        .brand-text {
+            line-height: 26px;
+            margin-bottom: 22px;
+        }
+    }
+
+    .slider-arrow {
+        border-radius: 50%;
+        --icon-size: 46px;
+        background-color: transparent;
+        border: 1px solid $white-color;
+        color: $white-color;
+
+        &:hover {
+            background-color: $white-color;
+            color: $theme-color;
+        }
+    }
+}
+
+.brand-box {
+    width: 200px;
+    height: 108px;
+    overflow: hidden;
+    margin: auto;
+    position: relative;
+    display: block;
+
+    &:hover {
+        a img {
+            &.gray {
+
+                opacity: 1;
+                visibility: visible;
+                transition: all 0.7s ease-in-out;
+                transform: translateY(0%);
+
+            }
+
+            &.original {
+
+                opacity: 0;
+                visibility: hidden;
+                transition: all 0.7s ease-in-out;
+                transform: translateY(100%);
+            }
+        }
+    }
+
+    img {
+        margin: 0 auto;
+        transition: all 0.7s ease-in-out;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+
+        &.gray {
+
+            transition: all 0.3s ease-in-out;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.7s ease-in-out;
+            transform: translateY(-100%);
+
+
+        }
+
+        &.original {
+
+            transition: all 0.7s ease-in-out;
+            transform: translateY(0%);
+        }
+    }
+}
+
+.brand-item {
+    display: grid;
+    align-content: center;
+    text-align: center;
+    min-height: 90px;
+    transition: 0.4s ease-in-out;
+
+    @include lg {
+        justify-content: center;
+    }
+
+    &.style2 {
+        a {
+            .gray {
+                filter: grayscale(100%);
+            }
+        }
+    }
+
+    a {
+        overflow: hidden;
+        display: inline-block;
+        position: relative;
+        transition: all 0.3s ease-in-out;
+
+        .original {
+            transition: all 0.3s ease-in-out;
+            display: block;
+            position: absolute;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            visibility: hidden;
+            // filter: grayscale(100%); 
+        }
+
+        .gray {
+            // filter: grayscale(100%);
+            transition: all 0.3s ease-in-out;
+            display: block;
+        }
+
+        &:hover {
+            .original {
+                position: absolute;
+                z-index: 1;
+                top: 0;
+                left: 0;
+                display: block;
+                opacity: 3;
+                visibility: visible;
+                transform: translateY(0%);
+                // filter: grayscale(0%);
+            }
+
+            .gray {
+                display: block;
+                visibility: hidden;
+                transform: translateY(100%);
+                // filter: grayscale(100%);
+            }
+        }
+    }
+}

@@ -1,0 +1,782 @@
+.footer-wrapper {
+    --border-color: rgba(255, 255, 255, 0.3);
+    --body-color: #788094;
+    position: relative;
+    z-index: 2;
+    background-color: $title-color;
+    overflow: hidden;
+
+    .social-links a {
+        margin: 0 30px 0 0;
+    }
+}
+
+.widget-area {
+    padding-top: 100px;
+    padding-bottom: 46px;
+}
+
+.sticky-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.footer-links {
+    ul {
+        padding: 0;
+        margin: 0;
+    }
+
+    li {
+        font-family: $body-font;
+        display: inline-block;
+        padding-right: 15px;
+        margin-right: 10px;
+        position: relative;
+
+        &:after {
+            content: "";
+            height: 20px;
+            width: 1px;
+            background-color: $white-color;
+            position: absolute;
+            top: 50%;
+            right: 0;
+            margin: -10px 0;
+        }
+
+        &:last-child {
+            margin-right: 0;
+            padding-right: 0;
+
+            &:after {
+                display: none;
+            }
+        }
+    }
+
+    a {
+        font-family: inherit;
+        color: $white-color;
+
+        &:hover {
+            color: $theme-color;
+        }
+    }
+}
+
+.copyright-wrap {
+    padding: 18px 0;
+    background-size: 100% auto;
+    background-color: #262A36;
+
+
+    .copyright-text {
+        color: $white-color;
+
+        a {
+            transition: all 0.4s ease-in-out;
+
+            &:hover {
+                color: $theme-color;
+            }
+        }
+    }
+
+    &.bg-title {
+        .copyright-text {
+            a {
+                &:hover {
+                    color: $theme-color;
+                }
+            }
+        }
+    }
+}
+
+.footer-info {
+    display: flex;
+    min-width: 170px;
+    margin-top: -0.4rem;
+    margin-bottom: 0;
+
+    &:not(:last-child) {
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+
+    &_title {
+        font-size: 18px;
+        color: $white-color;
+        display: block;
+        margin-bottom: 7px;
+
+    }
+
+    &_icon {
+        @include equal-size(26px);
+        min-width: 26px;
+        line-height: 26px;
+        font-size: 14px;
+        background-color: $theme-color;
+        color: $white-color;
+        text-align: center;
+        border-radius: 5px;
+        gap: 8px;
+        margin-right: 10px;
+    }
+
+    &_text {
+        display: block;
+        color: $body-color;
+        margin-top: -0.45em;
+        margin-bottom: -0.45em;
+        align-self: center;
+    }
+
+    &_link {
+        display: inline-block;
+        color: $body-color;
+
+        &:hover {
+            color: $theme-color;
+        }
+    }
+}
+
+.footer-layout1 {
+    background-color: #0E121D;
+    background-size: auto;
+    background-repeat: repeat;
+
+    .widget-area {
+        padding-top: 120px;
+        padding-bottom: 70px;
+
+    }
+
+    .th-widget-contact {
+        max-width: 265px;
+    }
+
+    .copyright-wrap {
+        background-color: #262A36;
+    }
+}
+
+.copyright-text {
+    margin: 0;
+
+    a {
+        color: $theme-color;
+
+        &:hover {
+            color: $white-color;
+        }
+    }
+}
+
+.newsletter-sec {
+    position: relative;
+    padding: 60px;
+    z-index: 3;
+
+    @include sm {
+        padding: 40px;
+    }
+
+    .newsletter-wrapper {
+        @include xl {
+            margin-right: 20px;
+        }
+
+        @include md {
+            text-align: center;
+            margin: 0 0 30px 0;
+        }
+    }
+
+    .newsletter-title {
+        margin-top: -0.5rem;
+        margin-bottom: 10px;
+
+
+
+    }
+
+    .newsletter-text {
+        color: $white-color;
+        line-height: 26px;
+        margin-bottom: -0.4rem;
+    }
+}
+
+.footer-newsletter {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+
+    @include md {
+        display: block;
+        text-align: center;
+    }
+
+    .newsletter-title {
+        margin-bottom: 0;
+        letter-spacing: -0.8px;
+
+        @include md {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.schedule-info {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px dashed rgba($color: #fff, $alpha: 0.2);
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+
+    &:last-of-type {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        border-bottom: none;
+    }
+}
+
+.th-widget-schedule {
+    width: 280px;
+    max-width: 100%;
+
+    .title {
+        color: $white-color;
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 16px;
+    }
+}
+
+.newsletter-widget {
+    max-width: 315px;
+
+    .title {
+        color: #888C97;
+    }
+
+    &.style2 {
+        background-color: #191D27;
+        padding: 40px;
+        border-radius: 30px;
+        text-align: center;
+        max-width: 387px;
+
+        @include xl {
+            min-width: 100%;
+        }
+
+        @include xs {
+            padding: 25px;
+        }
+    }
+
+
+
+    .form-group {
+        margin-bottom: 0;
+    }
+
+    .icon-btn {
+        border: none;
+        background-color: $theme-color;
+        color: $white-color;
+        border-radius: 0;
+        min-width: 56px;
+        padding: 0;
+
+        &:hover {
+            background-color: $title-color;
+        }
+    }
+
+    .footer-text {
+        margin-bottom: 25px;
+    }
+}
+
+.newsletter-form {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8px;
+
+    @include md {
+        justify-content: center;
+    }
+
+    @include xs {
+        display: block;
+    }
+
+    input {
+        background-color: $white-color;
+        max-width: 313px;
+        border-radius: 0;
+
+        @include xs {
+            max-width: 100%;
+        }
+
+        &:focus {
+            border-color: $white-color;
+        }
+    }
+
+    .th-btn {
+        min-width: 160px;
+        padding: 21px 20px;
+
+        @include xs {
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        &:before,
+        &:after {
+            background-color: $white-color;
+        }
+
+        &:hover {
+            color: $title-color;
+
+            &:before,
+            &:after {
+                background-color: $white-color;
+            }
+        }
+    }
+}
+
+.newsletter-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $theme-color;
+    padding: 60px;
+
+    .newsletter-title {
+        margin-top: -0.24em;
+        margin-bottom: -0.24em;
+        max-width: 390px;
+        color: $white-color;
+        font-weight: 600;
+    }
+
+    .newsletter-text {
+        margin-bottom: -0.5em;
+        max-width: 400px;
+    }
+
+    .form-control {
+        border-radius: 10px;
+    }
+
+    .th-btn {
+        border-radius: 10px;
+    }
+
+    @include md {
+        flex-direction: column;
+        text-align: center;
+        gap: 25px 0;
+
+        .newsletter-form {
+            max-width: 100%;
+        }
+    }
+}
+
+.footer-menu {
+    margin: 0;
+    padding: 0;
+
+    @include md {
+        text-align: center;
+    }
+
+    li {
+        display: inline-block;
+        margin-right: 30px;
+
+        @include xs {
+            margin-right: 5px;
+        }
+
+        a {
+            position: relative;
+            font-weight: 400;
+            font-family: $body-font;
+            font-size: 16px;
+            line-height: 24px;
+            color: $title-color;
+            text-transform: capitalize;
+
+            @include xs {
+                font-size: 14px;
+            }
+
+            &:hover {
+                color: $theme-color;
+            }
+
+        }
+    }
+}
+
+@include md {
+    .newsletter-wrap {
+        padding: 40px;
+
+        .newsletter-title {
+            font-size: 30px;
+        }
+
+        .newsletter-text {
+            font-size: 16px;
+        }
+    }
+
+    .footer-wrapper {
+        .newsletter-form {
+            max-width: 400px;
+            display: block;
+            margin: auto;
+        }
+    }
+}
+
+@include sm {
+    .newsletter-wrap {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 25px;
+
+        .newsletter-title {
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    .footer-wrapper .newsletter-form {
+        max-width: 550px;
+        gap: 15px;
+        justify-content: center;
+    }
+}
+
+@include xs {
+    .newsletter-wrap {
+        padding: 40px 20px;
+
+        .newsletter-title {
+            font-size: 24px;
+        }
+
+        .newsletter-form {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+
+    .footer-wrapper {
+        .newsletter-form {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+}
+
+
+@include md {
+    .footer-wrapper {
+        .widget-area {
+            padding-top: $space-mobile;
+            padding-bottom: 30px;
+        }
+    }
+
+    .footer-layout1 {
+        .widget-area {
+            padding-bottom: 40px;
+        }
+    }
+
+    .copyright-text {
+        text-align: center;
+    }
+}
+
+/* footer 2 ---------------------------------- */
+.footer-layout2 {
+    position: relative;
+
+    &:before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-color: rgba(14, 18, 29, 0.94);
+    }
+
+    .widget-area {
+        padding-bottom: 54px;
+    }
+
+
+    .copyright-wrap {
+        position: relative;
+        background-color: #262A36;
+        z-index: 2;
+    }
+
+    .th-social {
+        .social-title {
+            color: $white-color;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 28px;
+            margin-right: 14px;
+        }
+
+        a {
+            --icon-size: 40px;
+
+            &:not(:hover) {
+                background: #3D4250;
+                color: $white-color;
+            }
+        }
+    }
+
+    .th-widget-contact {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+
+        @include md {
+            grid-template-columns: repeat(1, 1fr);
+            gap: 30px;
+        }
+
+    }
+
+    .about-text {
+        max-width: 358px;
+        margin-bottom: 20px;
+    }
+
+    .footer-widget.widget_nav_menu a {
+        margin-bottom: 19px;
+    }
+}
+
+.footer-top-newsletter,
+.footer-layout2 {
+    .newsletter-wrap {
+        padding: 80px 0;
+        background-color: transparent;
+        border-radius: 0;
+        border-bottom: 1px solid $border-color;
+        gap: 20px;
+
+        @include md {
+            padding: 60px 0;
+        }
+    }
+
+    .newsletter-content {
+        display: inline-flex;
+        align-items: center;
+        gap: 30px;
+
+        .email-icon {
+            @include md {
+                display: none;
+            }
+        }
+    }
+}
+
+.th-widget-contact {
+    max-width: 280px;
+}
+
+.info-box {
+    display: flex;
+    margin-bottom: 30px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    &_icon {
+        @include equal-size(65px);
+        min-width: 65px;
+        line-height: 65px;
+        font-size: 20px;
+        background-color: $theme-color;
+        color: $white-color;
+        border-radius: 50%;
+        text-align: center;
+        margin-right: 20px;
+
+        @include xs {
+            @include equal-size(55px);
+            min-width: 55px;
+            line-height: 55px;
+        }
+    }
+
+    &_subtitle {
+        font-family: $title-font;
+        font-size: 14px;
+        color: $body-color;
+        font-weight: 600;
+        text-transform: uppercase;
+        display: block;
+        margin-bottom: 6px;
+    }
+
+    &_text {
+        display: block;
+        color: $white-color;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 26px;
+        margin-top: -0.45em;
+        margin-bottom: -0.45em;
+        align-self: center;
+    }
+
+    &_link {
+        display: block;
+        color: $white-color;
+
+        &:hover {
+            color: $theme-color;
+        }
+    }
+}
+
+.footer-top-newsletter {
+    background-color: $smoke-color2;
+    border-bottom: 1px solid $border-color;
+
+    .newsletter-wrap {
+        border-bottom: none;
+    }
+
+    .newsletter-title {
+        color: $title-color;
+    }
+
+    .newsletter-wrap {
+        .form-control {
+            border-radius: 99px;
+            box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.06);
+        }
+
+        .th-btn {
+            border-radius: 99px;
+        }
+    }
+
+    .newsletter-form {
+        @media (min-width: 1300px) {
+            max-width: 600px;
+        }
+    }
+}
+
+.footer-layout3 {
+    background-color: #F7F8FB;
+
+
+
+    .widget-area {
+        padding-top: 120px;
+        padding-bottom: 50px;
+    }
+
+    .th-widget-about.style2 {
+        max-width: 187px;
+    }
+
+    .th-social {
+        a {
+            &:not(:hover) {
+                background-color: #3D4250;
+            }
+        }
+    }
+
+}
+
+.th-screen {
+    border-radius: 30px;
+    width: 1860px;
+    max-width: 100%;
+    margin: 30px auto 30px;
+    position: relative;
+    z-index: 1019;
+    transition: border-radius .2s, width 350ms ease;
+
+    &.th-visible {
+        border-radius: 0;
+        width: 100%;
+    }
+}
+
+.newsletter-form {
+    &.style3 {
+        @include md {
+            max-width: 100%; 
+        }
+
+        .form-control {
+            position: relative;
+            max-width: 100%;
+            width: 100%;
+            height: 56px;
+            background: transparent;
+            border: none;
+            padding-left: 0;
+            font-size: 16px;
+            color: #888C97;
+            border-bottom: 1px solid rgba(77, 87, 101, 0.5);
+
+            @include inputPlaceholder {
+                color: #888C97;
+            }
+
+            @include md {
+                max-width: 100%;
+            }
+        }
+
+        .newsletter-btn {
+            position: absolute;
+            top: 15px;
+            right: 0px;
+            background: transparent;
+            border: none;
+            color: var(--theme-color);
+            font-size: 20px;
+        }
+    }
+}

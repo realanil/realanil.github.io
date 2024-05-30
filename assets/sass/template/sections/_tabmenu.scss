@@ -1,0 +1,180 @@
+/* Tab Menu 1 ------------------------------------*/
+.service-tabs {
+    margin-top: 38px;
+
+    &.style2 {
+        .nav-link {
+            border: 1px solid $theme-color; 
+        }
+    }
+
+    &.nav-tabs {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        border: none;
+        margin-bottom: 60px;
+
+        @include sm {
+            gap: 20px;
+        }
+
+        .nav-link:focus,
+        .nav-link:hover {
+            color: $white-color;
+            background-color: $theme-color;
+
+            img {
+                filter: brightness(0) invert(1);
+            }
+        }
+
+        .nav-item.show .nav-link,
+        .nav-link.active {
+            color: $white-color;
+            background-color: $theme-color;
+            border-color: $theme-color;
+
+            &:before,
+            &:after {
+                background-color: $theme-color;
+            }
+
+            img {
+                filter: brightness(0) invert(1);
+            }
+        }
+    }
+
+    .nav-link {
+        position: relative;
+        background: $white-color;
+        border: 1px solid #E4E4E4;
+        padding: 13px 30px;
+        font-family: $body-font;
+        font-size: 20px;
+        line-height: 20px;
+        font-weight: 600;
+        min-width: 217px;
+        color: $title-color;
+        border-radius: 0;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        text-transform: capitalize;
+
+        img {
+            min-width: 30px;
+            height: 30px;
+        }
+
+        @include xs {
+            padding: 14px 20px;
+        }
+
+        @include vxs {
+            font-size: 16px;
+        }
+    }
+
+    @include md {
+        margin-bottom: 30px;
+    }
+}
+.choose-tabs {
+    margin-top: 30px;
+
+    &.style2 {
+        .nav-link {
+            border: 1px solid $theme-color; 
+        }
+    }
+
+    &.nav-tabs {
+        display: flex;
+        gap: 30px;
+        border: none;
+        margin-bottom: 40px;
+        @include xl {
+            gap: 20px;
+        }
+
+        @include sm {
+            gap: 20px;
+        }
+
+        .nav-link:focus, 
+        .nav-link:hover {
+            color: $white-color;
+            background-color: transparent;
+            border-color: transparent; 
+
+        }
+
+        .nav-item.show .nav-link,
+        .nav-link.active {
+            color: $white-color;
+            background-color: transparent;
+            border-color: transparent;
+            &:before,
+            &:after {
+                background-color: $theme-color;
+            }
+
+        }
+    }
+
+    .nav-link {
+        position: relative;
+        background: transparent;
+        //border: 1px solid #4D5765; 
+        
+        padding: 14px 36px; 
+        font-family: $body-font;
+        font-size: 16px;
+        line-height: 26px;
+        font-weight: 400;
+        color: $gray-color; 
+        border-radius: 0;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        text-transform: capitalize;
+        z-index: 2;
+        &:before ,
+        &:after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-color: #4D5765; 
+            z-index: -1;
+            clip-path: polygon(0% 0%, 100% 0, 100% 70%, 90% 100%, 0% 100%);
+        }
+        &:after {
+            inset: 1px;
+            background-color: $title-color;
+        }
+      
+
+        img {
+            min-width: 30px;
+            height: 30px;
+        }
+
+        @include xs {
+            padding: 14px 20px;
+        }
+
+        @include vxs {
+            font-size: 16px;
+        }
+    }
+
+    @include md {
+        margin-bottom: 30px;
+    }
+}

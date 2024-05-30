@@ -1,0 +1,437 @@
+/*-------------------Course Start  -------------------*/
+.course-area {
+    padding: 155px 0 130px 0;
+
+    @include md {
+        padding: 115px 0 90px 0;
+    }
+
+    .slider-arrow {
+        background-color: $white-color;
+        color: var(--theme-color);
+
+        &:hover {
+            background-color: $title-color;
+            color: $white-color;
+        }
+    }
+}
+
+.course-slider {
+    margin: 0 60px !important;
+
+    @include xl {
+        margin: 0 !important;
+    }
+
+}
+
+.course-card {
+    position: relative;
+    z-index: 2;
+    --space: 50px;
+    border-radius: 40px;
+    overflow: hidden;
+
+    @include xxl {
+        --space: 35px;
+    }
+
+    @include xl {
+        --space: 25px;
+    }
+
+    &_overlay {
+        position: absolute;
+        inset: 0;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 3;
+        transition: all 0.4s ease-in-out;
+    }
+
+    &_img {
+        position: relative;
+        z-index: 2;
+        border-radius: 40px;
+        width: 100%;
+
+
+        img {
+            width: 100%;
+            border-radius: 40px;
+        }
+
+        &:before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            border-radius: 40px;
+            opacity: 0.75;
+            background: linear-gradient(180deg, rgba(10, 10, 13, 0.00) 0%, #0E0E17 68.29%);
+            transition: all 0.4s ease-in-out;
+            z-index: 3;
+        }
+    }
+
+    &_content {
+        content: "";
+        position: absolute;
+        left: var(--space);
+        bottom: var(--space);
+        max-width: 462px;
+        width: calc(100% - var(--space));
+        z-index: 4;
+
+        @media(max-width: 1399px) {
+            max-width: 330px;
+        }
+
+        @include lg {
+            max-width: 400px;
+        }
+    }
+
+    .box-title {
+        font-size: 30px;
+        color: $white-color;
+        line-height: 38px;
+        letter-spacing: -0.3px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+
+        @include xxl {
+            font-size: 24px;
+            line-height: 34px;
+        }
+
+        @include xl {
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
+
+    .line-btn {
+        font-size: 18px;
+        font-weight: 400;
+        color: $white-color;
+
+        &:before {
+            background-color: $white-color;
+        }
+    }
+
+    &:hover {
+        .course-card {
+            &_overlay {
+                opacity: 1;
+                visibility: visible;
+            }
+
+            &_img {
+                filter: grayscale(50%);
+
+                &:before {
+                    opacity: 0.6;
+                    background: linear-gradient(180deg, rgba(10, 10, 13, 0.00) 0%, #0E0E17 68.29%);
+
+
+                }
+            }
+        }
+    }
+}
+
+@include xs {
+    .course-card {
+        --space: 20px;
+        border-radius: 20px;
+
+        &_content {
+            padding-right: 20px;
+        }
+
+        &_img {
+            border-radius: 20px;
+
+            &:before {
+                border-radius: 20px;
+            }
+
+            img {
+                border-radius: 20px;
+            }
+        }
+
+        .box-title {
+            font-size: 18px;
+            line-height: 26px;
+        }
+    }
+}
+
+/*-------------------Course end  -------------------*/
+
+/* ------------------Job Post --------------------*/
+.job-post {
+    border-radius: 10px;
+    background: $white-color;
+    padding: 10px;
+    box-shadow: 0px 10px 65px 0px rgba(0, 0, 0, 0.09);
+
+    &.style2 {
+        background: $smoke-color2;
+        box-shadow: none;
+        margin-bottom: 60px;
+
+        .job-wrapper {
+            padding: 0px 20px 10px 20px;
+        }
+
+        .job-post {
+            &_author {
+                border: 0;
+                padding: 0;
+                margin: 0;
+            }
+
+            &_date {
+                display: flex;
+                gap: 20px;
+
+                @include sm {
+                    justify-content: flex-start;
+                    margin-top: 20px;
+                }
+            }
+        }
+
+        .th-btn {
+            padding: 11px 22px;
+        }
+
+        .job-wrapper {
+            @include sm {
+                flex-direction: column;
+            }
+        }
+    }
+
+    &_date {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+
+        .date {
+            background-color: $white-color;
+            padding: 12px 20px;
+            border-radius: 100px;
+            font-size: 14px;
+            line-height: 14px;
+            color: $title-color;
+            font-weight: 500;
+            letter-spacing: -0.28px;
+        }
+
+        i {
+            background-color: $white-color;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            border-radius: 100px;
+            color: #D0D7DF;
+            border: 1px solid #DFE2E9;
+            cursor: pointer;
+            transition: all 0.4s ease-in-out;
+
+            &:hover {
+                background-color: $theme-color;
+                color: $white-color;
+            }
+        }
+    }
+
+    &_author {
+        display: flex;
+        gap: 20px;
+        border-bottom: 1px solid #E2E5EC;
+        border-radius: 5px;
+        padding-bottom: 30px;
+        margin-bottom: 10px;
+
+        @media(max-width: 400px) {
+            flex-direction: column;
+        }
+
+        .job-author {
+            min-width: 80px;
+
+            img {
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+            }
+        }
+    }
+
+    .company-name {
+        font-family: $title-font;
+        font-size: 16px;
+        color: $theme-color;
+        font-weight: 600;
+        display: block;
+    }
+
+    .job-title {
+        font-size: 22px;
+        font-family: $title-font;
+        font-weight: 600;
+        color: $title-color;
+        display: block;
+    }
+
+    .location {
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .job-content {
+        padding: 20px;
+        border-radius: 10px;
+        background: $smoke-color2;
+
+        &_wrapper {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #E2E5EC;
+            padding-bottom: 22px;
+            margin-bottom: 12px;
+
+            @include sm {
+                flex-direction: column;
+            }
+        }
+
+        @include xs {
+            padding: 15px;
+        }
+    }
+
+    .job-category {
+        a {
+            background-color: $white-color;
+            padding: 7px 18px;
+            border-radius: 100px;
+            font-size: 14px;
+            font-weight: 600;
+            color: $title-color;
+            transition: all 0.4s ease-in-out;
+
+            @include xs {
+                font-size: 12px;
+            }
+
+            @media(max-width: 400px) {
+                font-size: 10px;
+                padding: 7px 10px;
+            }
+
+            &:hover {
+                background-color: $theme-color;
+                color: $white-color;
+            }
+        }
+
+        &_wrapper {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #E2E5EC;
+            padding-bottom: 12px;
+
+            @include sm {
+                flex-direction: column;
+            }
+
+            .star {
+                font-size: 12px;
+
+                @include sm {
+                    margin: 20px 0 0 0;
+                }
+
+                i {
+                    color: #E5E5E5;
+
+                    &:not(:last-child) {
+                        color: #FFB321;
+                    }
+                }
+            }
+        }
+    }
+
+    .job-wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 20px 10px 20px;
+
+        @media(max-width: 400px) {
+            flex-direction: column;
+            padding: 10px;
+        }
+
+        .price {
+            color: $title-color;
+            font-size: 18px;
+            font-weight: 600;
+
+            @media(max-width: 400px) {
+                margin-bottom: 10px;
+            }
+        }
+
+        .th-btn {
+            padding: 10px 15px;
+        }
+    }
+}
+
+.career-btn {
+    .th-btn {
+        padding: 19.5px 42.5px;
+    }
+}
+
+.job-responsibilities {
+    .checklist {
+        li {
+            color: $body-color;
+
+            &:before {
+                background-color: $body-color;
+            }
+        }
+    }
+}
+
+.job-skill {
+    .checklist {
+        li {
+            color: $body-color;
+
+            &:before {
+                background-color: $body-color;
+            }
+        }
+    }
+}
+
+.career-btn {
+    border-top: 1px solid #E1E1E1;
+    padding-top: 30px;
+    margin-top: 60px;
+}
+
+

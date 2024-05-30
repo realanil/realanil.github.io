@@ -1,0 +1,393 @@
+/* Process Card ---------------------------------- */
+.process-sec {
+    background-repeat: repeat;
+    background-size: auto;
+}
+
+.process-area {
+    background-size: auto;
+    background-repeat: repeat;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    @include lg {
+        display: block;
+    }
+
+    @include xs {
+        padding: 30px;
+    }
+}
+
+.process-content {
+    background-color: $title-color;
+    padding: 40px;
+    max-width: 360px;
+
+    @include lg {
+        max-width: 100%;
+        margin-bottom: 50px;
+    }
+
+    @include xs {
+        padding: 30px;
+    }
+
+    .sub-title {
+        letter-spacing: 1.6px;
+        text-transform: uppercase;
+    }
+
+    .sec-text {
+        color: #888C97;
+        margin-bottom: 35px;
+    }
+}
+
+/* Process box  start ---------------------------------- */
+.process-box {
+    display: flex;
+    gap: 20px;
+
+    @include xs {
+        display: block;
+        text-align: center;
+    }
+
+    &_wrap {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 73px 20px;
+
+        @include xl {
+            gap: 50px 20px;
+        }
+
+        @include md {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+    &_icon {
+        position: relative;
+        min-width: 100px;
+        @include equal-size-lineHeight(100px);
+        background-color: $white-color;
+        border-radius: 50%;
+        text-align: center;
+        filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.04));
+        transition: 0.4s ease-in-out;
+
+
+
+        @include sm {
+            margin: auto auto 25px auto;
+            display: block;
+        }
+
+        img {
+            transition: 0.4s ease-in-out;
+        }
+    }
+
+    .box-title {
+        margin-bottom: 8px;
+    }
+
+    &_text {
+        line-height: 26px;
+        margin-bottom: -0.3rem;
+    }
+
+    .box-number {
+        color: $gray-color;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        margin-top: -0.4rem;
+        margin-bottom: 8px;
+    }
+
+    &:hover {
+        .process-box {
+            &_icon {
+
+                img {
+                    transform: rotateY(180deg);
+                }
+            }
+
+        }
+    }
+}
+
+@include md {
+    .process-box {
+        &-wrap {
+            &:nth-child(even) {
+                &:after {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@include sm {
+    .process-box {
+        &-wrap {
+            &:after {
+                display: none;
+            }
+
+            margin-bottom: 40px;
+
+            &:nth-child(even) {
+                margin-top: 0;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+
+/* Process box  end ---------------------------------- */
+
+/* Process item  start ---------------------------------- */
+
+.process-item {
+    display: flex;
+    gap: 20px;
+    min-width: 350px;
+
+    @include xs {
+        min-width: 100%;
+    }
+
+    @include vxs {
+        display: block;
+        text-align: center;
+    }
+
+    &-wrap {
+
+        &:nth-child(even) {
+            margin-top: 165px;
+
+            @include sm {
+                margin-top: 30px;
+            }
+
+        }
+
+        &:nth-child(3) {
+            margin-left: -50px;
+
+            @include sm {
+                margin: 30px 0 0 0;
+            }
+        }
+
+        &:nth-child(4) {
+            margin-left: -50px;
+
+            @include sm {
+                margin: 30px 0 0 0;
+            }
+        }
+    }
+
+    &_icon {
+        position: relative;
+        min-width: 100px;
+        @include equal-size-lineHeight(100px);
+        background-color: $white-color;
+        border-radius: 50%;
+        text-align: center;
+        filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.04));
+        transition: 0.4s ease-in-out;
+
+
+
+        @include sm {
+            margin: auto auto 25px auto;
+            display: block;
+        }
+
+        img {
+            transition: 0.4s ease-in-out;
+        }
+    }
+
+    .box-number {
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 10px;
+    }
+
+    .box-title {
+        margin-bottom: 8px;
+    }
+
+    &_text {
+        line-height: 26px;
+        margin-bottom: -0.3rem;
+    }
+
+    &:hover {
+        .process-item {
+            &_icon {
+
+                img {
+                    transform: rotateY(180deg);
+                }
+            }
+
+        }
+    }
+}
+
+.step-wrap {
+    position: relative;
+
+    .process-line {
+        position: absolute;
+        top: 45%;
+        left: 0%;
+        transform: translate(calc(-50% + 887px), calc(-50% + 25px));
+        margin: 0 -400px;
+
+        @include xl {
+            display: none;
+        }
+    }
+}
+
+/* Process item  end ---------------------------------- */
+
+.process-card-area {
+    position: relative;
+    max-width: 1350px;
+    display: block;
+    margin: auto;
+    padding: 0 60px;
+    z-index: 2;
+
+    @include xl {
+        padding: 0 10px; 
+    }
+    @include lg {
+        padding: 0 30px;
+    }
+    @include sm {
+        padding: 30px 0px 0 0;
+    }
+
+    &:before {
+        content: "";
+        position: absolute; 
+        inset: 0;
+        top: 60px;
+        height: 265px;
+        background-color: $title-color;
+        z-index: -1;
+        @include sm {
+            top: 0;
+        }
+    }
+}
+
+.process-card {
+    position: relative;
+    background-color: $white-color;
+    padding: 30px;
+    box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.08);
+    z-index: 2;
+
+    @include xl {
+        padding: 25px; 
+    }
+
+    &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 0;
+        background-color: $theme-color;
+        transition: all 0.4s ease;
+        z-index: -1;
+    }
+
+    &_subtitle {
+        font-family: $title-font;
+        font-size: 14px;
+        font-weight: 600;
+        text-align: right;
+        display: block;
+        text-transform: uppercase;
+    }
+
+    &_icon {
+        width: 90px;
+        height: 90px;
+        line-height: 90px;
+        text-align: center;
+        border-radius: 50%;
+        background-color: rgba(255, 102, 0, 0.1); 
+        margin-bottom: 20px;
+
+        img {
+            transition: all 0.4s ease;
+        }
+    }
+
+    .box-title {
+        font-size: 36px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    &_text {
+        font-size: 16px;
+        line-height: 26px;
+        margin-bottom: -0.3rem;
+    }
+
+    &:hover {
+        &:before {
+            height: 100%;
+        }
+
+        .process-card {
+            &_subtitle {
+                color: $white-color;
+            }
+
+            &_icon {
+                background-color: rgba(255, 255, 255, 0.7);
+
+                img {
+                    filter: brightness(0);
+                    transform: rotateY(180deg); 
+                }
+
+            }
+
+            &_text {
+                color: $white-color;
+            }
+
+        }
+
+        .box-title {
+            color: $white-color;
+        }
+    }
+}
